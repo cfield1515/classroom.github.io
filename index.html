@@ -17,9 +17,13 @@
                 <option value="classroom2">Classroom 2</option>
                 <option value="classroom3">Classroom 3</option>
             </select>
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date">
             <label for="timeslot">Select Time Slot:</label>
-            <input type="datetime-local" id="timeslot" name="timeslot">
-            <button type="submit">Book Classroom</button>
+            <select id="timeslot" name="timeslot" disabled>
+                <option value="" selected disabled>Please select a date first</option>
+            </select>
+            <button type="submit" disabled>Book Classroom</button>
         </form>
         <p id="message"></p>
     </div>
